@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+	<title>GRUPO_04_LABORATORIO</title>
+
+	<!-- Mobile Specific Meta
+		================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Fontawesome Icon font -->	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- bootstrap.min css -->
+	<link rel="stylesheet" href="../plugins/bootstrap/dist/css/bootstrap.min.css">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="../plugins/animate-css/animate.css">
+	<!-- Magnific popup css -->
+	<link rel="stylesheet" href="../plugins/magnific-popup/dist/magnific-popup.css">
+	<!-- Slick Carousel -->
+	<link rel="stylesheet" href="../plugins/slick-carousel/slick/slick.css">
+	<link rel="stylesheet" href="../plugins/slick-carousel/slick/slick-theme.css">
+
+	<!-- Main Stylesheet -->	
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/main.css">	
+	<!-- SCROOLL REVEAL JS LIBRARY CDN -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+</head>
+
+<body id="body" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<!--LOGIN-->			
+	<section id="login" class="contact-us section-bg">
+		<div class="container">
+			<div class="row">
+
+				<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+					<h2 id="idlogin">Login</h2>
+					<div class="border"></div>
+				</div>
+
+				<div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
+					<img id="idImagen" class="img-responsive" src="../img/fondoLogin.jpg">
+				</div>
+				<br><br>
+				<div class="contact-form col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+					<form id="contact-form" method="post" action="#" role="form">
+					
+						<div class="form-group">
+                    		<label for="userName">Usuario</label>
+                    		<input type="text" id="userName" class="form-control input-lg chat-input" placeholder="Usuario" required/>
+                  		</div>
+                  		<div class="form-group">
+                    		<label for="userPassword">Contraseña</label>
+                    		<input type="password" id="userPassword" class="form-control input-lg chat-input" placeholder="Contraseña" required/>
+                  		</div>
+                  		<div class="form-check">
+                    		<input type="checkbox" class="form-check-input" id="userSession">
+                    		<label class="form-check-label" for="userSession">Matener iniciada la sesión</label>
+                  		</div>
+
+                  		<div class="wrapper">
+                        	<span class="group-btn">
+                            	<button type="submit" class="btn btn-info btn-lg">Ingresar</button>
+                        	</span>
+                		</div>						
+					</form>
+				</div>				
+			</div>
+		</div>
+			
+	</section>
+		
+		<!-- Main jQuery -->
+		<script type="text/javascript" src="plugins/jquery/dist/jquery.min.js"></script>
+		<!-- Bootstrap 3.1 -->
+		<script type="text/javascript" src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+		<!-- Smooth Scroll -->
+		<script type="text/javascript" src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>					
+		<!-- Custom js -->
+		<script type="text/javascript" src="js/script.js"></script>
+		<!-- SCROOLL REVEAL SCRIPT -->
+	    <script>
+		      window.sr = ScrollReveal();
+
+		    sr.reveal('#idlogin', {
+		      duration: 5000,
+		      origin: 'bottom'
+		    });
+
+		    sr.reveal('#idImagen', {
+		      duration: 5000,
+		      origin: 'left',
+		      distance: '300px'
+		    });
+
+		    sr.reveal('#contact-form', {
+		      duration: 5000,
+		      origin: 'right',
+		      distance: '300px'
+		    });
+
+		    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		      anchor.addEventListener('click', function (e) {
+		        e.preventDefault();
+
+		        document.querySelector(this.getAttribute('href')).scrollIntoView({
+		          behavior: 'smooth'
+		        });
+		      });
+		    });
+	    </script>
+    </body>
+</html>
