@@ -1017,6 +1017,7 @@ a:hover {
 .team-member {
   background-color: #292F36;
   margin-bottom: 10px;
+  margin-left: 12px; 
 }
 
 .team-member:hover .mask {
